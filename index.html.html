@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prezent na Dzień Kobiet</title>
+	<style>
+		/* Ustawienia stylu dla napisu */
+		#prezent {
+			position: absolute;
+			top: 6%;
+			left: 19%;
+			transform: translate(-50%, -50%);
+			font-size: 20px;
+			text-align: center;
+			width: 70%;
+			max-width: 500px;
+			line-height: 1.5;
+		}
+		/* Ustawienia stylu dla inputa */
+		#zdjecie {
+			display: block;
+			margin: 20px auto;
+			width: 80%;
+			max-width: 500px;
+		}
+	</style>
+</head>
+<style>
+    .img-container {
+        display: inline-block;
+        margin: 10px;
+        vertical-align: middle;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+    }
+</style>
+</head>
+<body>
+
+</div>
+<div class="img-container right">
+    <img src="C:\Users\jarom\Downloads\334921892_754443799334485_7642215758178078227_n.jpg" alt="Opis obrazka"></a>
+
+
+<body>
+	<div id="prezent">
+		Z okazji dnia kobiet, mam dla ciebie mały prezent, kochanie.
+		
+	</div>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Jesteśmy już razem kochanie...</title>
+	<style>
+		/* Ustawienia stylu dla licznika */
+		#licznik {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 50px;
+			text-align: center;
+			width: 80%;
+			max-width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div id="licznik"></div>
+
+	<script>
+		// Ustaw datę rozpoczęcia związku
+		var dataRozpoczecia = new Date('2019-12-12T00:00:00');
+
+		// Funkcja wyświetlająca aktualny czas
+		function wyswietlCzas() {
+			// Pobierz aktualną datę i czas
+			var teraz = new Date();
+
+			// Oblicz różnicę między aktualną datą a datą rozpoczęcia związku
+			var roznicaCzasu = teraz.getTime() - dataRozpoczecia.getTime();
+
+			// Przelicz różnicę czasu na dni, godziny, minuty i sekundy
+			var dni = Math.floor(roznicaCzasu / (1000 * 60 * 60 * 24));
+			var godziny = Math.floor((roznicaCzasu / (1000 * 60 * 60)) % 24);
+			var minuty = Math.floor((roznicaCzasu / (1000 * 60)) % 60);
+			var sekundy = Math.floor((roznicaCzasu / 1000) % 60);
+
+			// Wyświetl czas na stronie
+			document.getElementById('licznik').innerHTML = 'Jesteśmy juz razem ' + dni + ' dni, ' + godziny + ' godziny, ' + minuty + ' minuty i ' + sekundy + ' sekund.';
+            var dayOfMonth = now.getDate();
+        if (dayOfMonth === 12) {
+          document.getElementById("bd").innerHTML = "Wszystkiego najlepszego Kochanie!";
+        } else {
+          document.getElementById("bd").innerHTML = "";
+        }
+
+        setTimeout(updateCountdown, 1000);
+      }
+		// Wywołaj funkcję wyswietlCzas co sekundę
+		setInterval(wyswietlCzas, 1000);
+	</script>
+</body>
+</html>
