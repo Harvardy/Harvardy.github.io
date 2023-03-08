@@ -14,6 +14,7 @@
 			width: 70%;
 			max-width: 500px;
 			line-height: 1.5;
+			color: white;
 		}
 		/* Ustawienia stylu dla inputa */
 		#zdjecie {
@@ -21,6 +22,12 @@
 			margin: 20px auto;
 			width: 80%;
 			max-width: 500px;
+			
+		}
+		body {
+			background-image: url("../images/maldives-3840x2160-hotel-4k-19257.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 	</style>
 </head>
@@ -60,13 +67,14 @@
 		/* Ustawienia stylu dla licznika */
 		#licznik {
 			position: absolute;
-			top: 70%;
-			left: 50%;
+			top: 80%;
+			right: -10%;
 			transform: translate(-50%, -50%);
 			font-size: 50px;
 			text-align: center;
 			width: 80%;
 			max-width: 500px;
+			color: rgb(255, 255, 255);
 		}
 	</style>
 </head>
@@ -93,15 +101,11 @@
 
 			// Wyświetl czas na stronie
 			document.getElementById('licznik').innerHTML = 'Jesteśmy juz razem ' + dni + ' dni, ' + godziny + ' godziny, ' + minuty + ' minuty i ' + sekundy + ' sekund.';
-            var dayOfMonth = now.getDate();
-        if (dayOfMonth === 8) {
-          document.getElementById("bd").innerHTML = "Wszystkiego najlepszego Kochanie!";
-        } else {
-          document.getElementById("bd").innerHTML = "";
-        }
+			
 
         setTimeout(updateCountdown, 1000);
       }
+	
 		// Wywołaj funkcję wyswietlCzas co sekundę
 		setInterval(wyswietlCzas, 1000);
 	</script>
