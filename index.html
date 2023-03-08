@@ -105,5 +105,13 @@
 		// Wywołaj funkcję wyswietlCzas co sekundę
 		setInterval(wyswietlCzas, 1000);
 	</script>
+	<script>
+		var today = new Date();
+		var dayOfMonth = today.getDate();
+		
+		if (dayOfMonth === 12) {
+			alert("Wszystkiego najlepszego z okazji kolejnej miesiecznicy!");
+		}
+	</script>
 </body>
 </html>
